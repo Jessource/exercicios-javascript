@@ -1,4 +1,4 @@
-function maxmin(a,b,c,d,e) {
+function maximomin(a,b,c,d,e) {
   var valorMin = Math.min(a,b,c,d,e)
   var valorMax = Math.max(a,b,c,d,e)
 
@@ -6,4 +6,4 @@ function maxmin(a,b,c,d,e) {
 }
 
 
-console.log(maxmin(10,5,12,3,2))
+console.log(maximomin(10,5,12,3,2))
