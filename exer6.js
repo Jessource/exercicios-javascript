@@ -1,8 +1,11 @@
-
-for(var i=0; i < 20;i++){
-  if(i%2 !== 0){
-    continue
+function menorNumero(a,b){
+  if(a>b ){
+    return b
+  }else if(b>a){
+    return a
+  }else{
+    return(a || b)
+    
   }
-  console.log(i);
 }
-
+console.log(menorNumero(2,5))

@@ -1,10 +1,30 @@
-function exibirTabuada(numero){
-  for(var i = 1; i<=10;i++){
-    var resultado = (numero*[i])
-    console.log(numero+"x"+[i]+"="+resultado)
+/*
+Exercício: estava presente na aula?
+Nas escolas do futuro não haverá necessidade de chamadas. Ao entrar em sala, uma
+câmera fará o reconhecimento facial do aluno e registrará sua presença!
+Imagine que, a cada aula, um array guardasse o nome de todos os alunos que estiveram
+presentes na aula.
+Escreva uma função estavaPresenteNaAula(nomeDoAluno, nomesDosPresentes)
+Essa função deve receber dois parâmetros:
+● O primeiro deve representar o nome de um aluno
+● O segundo deve representar um array com o os nomes dos alunos presentes.
+A sua função deve retornar true caso o nome do aluno passado como parâmetro estiver
+entre os presentes. false caso contrário
+Segue a resolução abaixo:
+*/
 
+
+
+function estavaPresenteNaAula(nomeDoAluno,nomesDosPresentes){
+  var indice = nomesDosPresentes.indexOf(nomeDoAluno);
+
+  if (indice !== -1) {
+    return true
+  }else{
+    return false
   }
-
 }
 
-exibirTabuada(8)
+var res = estavaPresenteNaAula('jessica',['ana','joia','jessica']);
+
+console.log(res)

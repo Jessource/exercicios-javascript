@@ -1,6 +1,11 @@
-function autonomia (qtdCombustivel,rendimento){
-  var resultado= qtdCombustivel*rendimento
-  console.log("o automóvel vai ter a autonomia de pecorrer "+resultado+"km")
+function gerarDezenas(){
+  var array = []
+ for( var i= 0; i<=5;i++){
+  var dezenaAleatorio= Math.floor(Math.random()*60);
+  array.push(dezenaAleatorio)
+ }
   
+ return array;
 }
-autonomia(10,5);
+
+console.log(gerarDezenas());

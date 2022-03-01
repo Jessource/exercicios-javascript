@@ -1,8 +1,15 @@
-var listaDeGanhos = [10,30,-10,-1,40]
-var totalNegativos = 0
-for(var i=0;i<listaDeGanhos.length;i++){
-  if(listaDeGanhos[i] < 0) {
-    totalNegativos++;
+
+/*
+Exercício: Frutas
+Um sacolão montou uma lista com as frutas que eles vendem, e de acordo com a fruta
+que o usuário busca eles querem informar se existe a fruta na lista ou não!
+
+Segue a resolução a baixo:
+*/
+var listaDeFrutas = ['uva','banana','cacau']
+var buscar= 'uva'
+for( var i=0; i<listaDeFrutas.length;i++){
+  if(buscar==listaDeFrutas[i]){
+    console.log(" a fruta="+ buscar+" "+ "existe")
   }
 }
-console.log(totalNegativos);
